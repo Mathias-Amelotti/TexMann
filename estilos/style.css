@@ -5,15 +5,43 @@
 }
 
 body{
-    background-color: gray;
+    background-color: black;
+
 }
+
 
 #tituloindex {
     color: black;
 }
 
-#descripcion {
-    color: goldenrod;
+.indexGrilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 50% 50%;
+}
+.fondoDeIndex{
+    grid-column: 1/4;
+    background-image: url(../multimedia/images/Presentación\ de\ inicio.jpg);
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.divIndex{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    align-self: center;
+    padding-top: 450px;
+    color: rgb(241, 224, 224);
+}
+
+.pIndex{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+
 }
 
 .pasos {
@@ -34,21 +62,36 @@ body{
 }
 
 h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 50px;
-    background-color: rgba(255, 0, 0, 0.836);
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(241, 224, 224);
+    
 }
 
 h2 {
     text-align: center;
-    font-family: monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-style: italic;
     font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 150px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    align-self: end;
+    color: rgb(241, 224, 224);
 }
 
 h3{
-    font-family: monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: lighter;
     font-size: 30px;
+    padding: 40px;
+    color: rgb(241, 224, 224);
 }
 
 h4{
@@ -58,25 +101,56 @@ h4{
 }
 
 ol li {
-    color: black;
-    font-family: monospace;
+    color: rgb(241, 224, 224);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-style: italic;
     font-size: 20px;
+    margin: 20px;
 }
 
-#algunosdenuestrostrabajos {
-    text-align: center;
+.grillaSobreNosotros{
+display: grid;
+background-color: black;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 50% 50%  ;
 }
 
-#psobrenosotros {
+.fotoSobreNosotros{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 100px;
+    justify-self: center;
+}
+
+.pSobreNosotros {
     text-align: justify;
     font-style: italic;
-    font-weight: bold;
-    font-size: 25px;
+    font-weight: 500;
+    font-size: 40px;
+    color: rgb(241, 224, 224);
+    margin: 30px 30px 30px 30px;
+    justify-self: start;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.pSobreNosotros2{
+    text-align: justify;
+    font-style: italic;
+    font-size: 40px;
+    color: rgb(241, 224, 224);
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-self: start;
+    align-self: center;
+    margin-right: 20px;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(241, 224, 224);
 }
 
 
@@ -84,6 +158,7 @@ a {
 .listaMenu li {
     margin: 0 1rem;
     font-family: monospace;
+    color: black;
 }
 
 .contenedorMenu {
@@ -93,40 +168,95 @@ a {
     padding: 1rem 2rem;
     flex-wrap: wrap;
     background-color: black;
-    position: sticky;
 }
 .contenidoContacto {
-    font-family: monospace;
+    display: grid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     text-align: center;
     margin: 40px;
+    color: rgb(241, 224, 224);
 }
 
+.mapaTex {
+    margin: 20px 30rem;
+    border: solid 2px;
+    margin-left: 600px;
+
+}
 .contenedorFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: rgb(241, 224, 224);
 }
-.mapaTex {
-    margin: 20px 30rem;
-    border: solid 2px;
+
+.footerTexto{
+color: black;
 }
+
 .grillaGaleria{
     display: grid;
     grid-template-areas:"main main main"
                         "footer footer footer";
 }
 
+.remeraNegra{
+    height: 400px;
+    width: auto;
+    border: solid 0px;
+    border-radius: 10px;
+    justify-self: end;
+}
+
+.remeraGris{
+    height: 400px;
+    width: auto;
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.remeraBeige{
+    height: 400px;
+    width: auto;
+    border: solid 0px;
+    border-radius: 10px;
+    justify-self: start;
+}
+
+.buzoBlanco{
+    height: 400px;
+    width: auto;
+    border: solid 0px;
+    border-radius: 10px;
+    justify-self: end;
+}
+
+.buzoMarron{
+    height: 400px;
+    width: auto;
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.buzoNegro{
+    height: 400px;
+    width: auto;
+    border: solid 0px;
+    border-radius: 10px;
+    justify-self: start;
+}
+
 .mainGrilla{
-background-color: white;
+background-color: black;
 grid-area: main;
 }
 
 .footerGrilla{
-    background-color: brown;
     grid-area: footer;
+    background-color: rgb(241, 224, 224)
 }
+
 .contenedorGrilla{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -136,88 +266,70 @@ grid-area: main;
     column-gap: 10px;
     justify-items: center;
     align-items: center;
-}
-    .imagenGaleriaA {
-        width: auto;
-        height: 100%;
-        grid-column: 3/4;
-        grid-row: 1/2;
-        border: solid 2 px;
-        border-radius: 5px;
-    }
-.imagenGaleriaB {
-    width: 100%;
-    height: auto; 
-    grid-column: 1/3;
-    grid-row: 1/2;   
-}
-
-.imagenGaleriaC{
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
-    grid-column: 3/4;
-    grid-row: 2/3;
-    align-self: start;
-}
-
-.imagenGaleriaD {
-    width: 100%;
-    height: auto;
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.imagenGaleriaE {
-    height: 100%;
-    width: auto;
-    grid-column: 2/3;
-    grid-row: 2/4;
-}
-
-.imagenGaleriaF {
-    width: 100%;
-    height: auto;
-    align-self: end;
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
-
-.imagenGaleriaG {
-width: 100%;
-height: auto;
-margin-bottom: 30px;
-grid-column: 3/4;
-grid-row: 2/3;
-align-self: end;
-}
-
-.imagenGaleriaH{
-    height: 100%;
-    width: auto;
+    background-color: black;
 }
 
 .divServicio{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+
+}
+
+.gamaColores{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: justify;
 }
 
 .coloresServicio{
+    grid-column: 1/2;
+    grid-row: 1/4;
     justify-self: center;
     align-self: center;
-    margin: 30px;
+    margin-right: 220px;
     border: solid 0px;
     border-radius: 10px;
+}
+
+.talles{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: justify;
+    margin-left: 250px;
 }
 
 .tallesServicio{
-    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    justify-self: end;
     align-self: center;
-    margin: 30px;
     border: solid 0px;
     border-radius: 10px;
+    margin-right: 150px;
 }
 
-.textoServicio{
-    
+.textoSerigrafia{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin-right: 350px;
+    justify-self: start;
+    align-self: end;
+}
+.serigrafia{
+    width: 500px;
+    justify-self: center;
+    margin-right: 250px;
+}
+
+.textoSublimacion2{
+grid-column: 2/3;
+grid-row: 4/5;
+}
+
+.sublimacion2{
+    width: 500px;
+    justify-self: center;
+    margin-left: 100px;
+    margin-bottom: 100px;
 }
