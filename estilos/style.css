@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: black;
 
 }
@@ -14,12 +14,13 @@ body{
     color: black;
 }
 
-.indexGrilla{
+.indexGrilla {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50% 50%;
 }
-.fondoDeIndex{
+
+.fondoDeIndex {
     grid-column: 1/4;
     background-image: url(../multimedia/images/Presentación\ de\ inicio.jpg);
     height: 1000px;
@@ -27,7 +28,7 @@ body{
     background-repeat: no-repeat;
 }
 
-.divIndex{
+.divIndex {
     grid-column: 1/4;
     grid-row: 1/2;
     align-self: center;
@@ -35,7 +36,7 @@ body{
     color: rgb(241, 224, 224);
 }
 
-.pIndex{
+.pIndex {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 60px;
     font-weight: lighter;
@@ -67,7 +68,7 @@ h1 {
     font-weight: lighter;
     text-align: center;
     color: rgb(241, 224, 224);
-    
+
 }
 
 h2 {
@@ -85,7 +86,7 @@ h2 {
     color: rgb(241, 224, 224);
 }
 
-h3{
+h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: lighter;
@@ -94,7 +95,7 @@ h3{
     color: rgb(241, 224, 224);
 }
 
-h4{
+h4 {
     font-family: monospace;
     color: white;
     font-size: 20px;
@@ -109,14 +110,14 @@ ol li {
     margin: 20px;
 }
 
-.grillaSobreNosotros{
-display: grid;
-background-color: black;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 50% 50%  ;
+.grillaSobreNosotros {
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
 }
 
-.fotoSobreNosotros{
+.fotoSobreNosotros {
     grid-column: 1/2;
     grid-row: 1/2;
     padding-top: 100px;
@@ -136,7 +137,7 @@ grid-template-rows: 50% 50%  ;
     grid-row: 1/2;
 }
 
-.pSobreNosotros2{
+.pSobreNosotros2 {
     text-align: justify;
     font-style: italic;
     font-size: 40px;
@@ -169,6 +170,7 @@ a {
     flex-wrap: wrap;
     background-color: black;
 }
+
 .contenidoContacto {
     display: grid;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -181,9 +183,10 @@ a {
 .mapaTex {
     margin: 20px 30rem;
     border: solid 2px;
-    margin-left: 300px;
+    margin-left: 360px;
 
 }
+
 .contenedorFooter {
     display: flex;
     flex-direction: column;
@@ -191,17 +194,17 @@ a {
     background-color: rgb(241, 224, 224);
 }
 
-.footerTexto{
-color: black;
+.footerTexto {
+    color: black;
 }
 
-.grillaGaleria{
+.grillaGaleria {
     display: grid;
-    grid-template-areas:"main main main"
-                        "footer footer footer";
+    grid-template-areas: "main main main"
+        "footer footer footer";
 }
 
-.remeraNegra{
+.remeraNegra {
     height: 400px;
     width: auto;
     border: solid 0px;
@@ -209,14 +212,14 @@ color: black;
     justify-self: end;
 }
 
-.remeraGris{
+.remeraGris {
     height: 400px;
     width: auto;
     border: solid 0px;
     border-radius: 10px;
 }
 
-.remeraBeige{
+.remeraBeige {
     height: 400px;
     width: auto;
     border: solid 0px;
@@ -224,7 +227,7 @@ color: black;
     justify-self: start;
 }
 
-.buzoBlanco{
+.buzoBlanco {
     height: 400px;
     width: auto;
     border: solid 0px;
@@ -232,14 +235,14 @@ color: black;
     justify-self: end;
 }
 
-.buzoMarron{
+.buzoMarron {
     height: 400px;
     width: auto;
     border: solid 0px;
     border-radius: 10px;
 }
 
-.buzoNegro{
+.buzoNegro {
     height: 400px;
     width: auto;
     border: solid 0px;
@@ -247,20 +250,20 @@ color: black;
     justify-self: start;
 }
 
-.mainGrilla{
-background-color: black;
-grid-area: main;
+.mainGrilla {
+    background-color: black;
+    grid-area: main;
 }
 
-.footerGrilla{
+.footerGrilla {
     grid-area: footer;
     background-color: rgb(241, 224, 224)
 }
 
-.contenedorGrilla{
+.contenedorGrilla {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
     padding: 20px;
     row-gap: 10px;
     column-gap: 10px;
@@ -269,20 +272,20 @@ grid-area: main;
     background-color: black;
 }
 
-.divServicio{
+.divServicio {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 2fr;
 
 }
 
-.gamaColores{
+.gamaColores {
     grid-column: 1/2;
     grid-row: 1/2;
     text-align: justify;
 }
 
-.coloresServicio{
+.coloresServicio {
     grid-column: 1/2;
     grid-row: 1/4;
     justify-self: center;
@@ -292,14 +295,14 @@ grid-area: main;
     border-radius: 10px;
 }
 
-.talles{
+.talles {
     grid-column: 2/3;
     grid-row: 1/2;
     text-align: justify;
     margin-left: 250px;
 }
 
-.tallesServicio{
+.tallesServicio {
     grid-column: 2/3;
     grid-row: 1/4;
     justify-self: end;
@@ -309,25 +312,26 @@ grid-area: main;
     margin-right: 150px;
 }
 
-.textoSerigrafia{
+.textoSerigrafia {
     grid-column: 1/2;
     grid-row: 4/5;
     margin-right: 350px;
     justify-self: start;
     align-self: end;
 }
-.serigrafia{
+
+.serigrafia {
     width: 500px;
     justify-self: center;
     margin-right: 250px;
 }
 
-.textoSublimacion2{
-grid-column: 2/3;
-grid-row: 4/5;
+.textoSublimacion2 {
+    grid-column: 2/3;
+    grid-row: 4/5;
 }
 
-.sublimacion2{
+.sublimacion2 {
     width: 500px;
     justify-self: center;
     margin-left: 100px;
